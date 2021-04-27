@@ -2,6 +2,7 @@ function agregarElementos(){
 
 	elemento = document.getElementById("cuerpotabla");
 	var genero;
+	var genero = null;
 	var condicionActual; /* condicion actual*/
 
 	if(document.getElementById("genero1")checked){
@@ -22,7 +23,6 @@ function agregarElementos(){
 	
 
 	if(validarVacio("cedula")==false
-		|| validarVacio("nombre")=false || validarVacio("telefono")==false
 		|| validarVacio("nombre")==false || validarVacio("telefono")==false
 		|| validarVacio("direccion")==false || validarVacio("observaciones")==false
 		|| validarVacio("email")==0  || validarVacio("edad")==false){
