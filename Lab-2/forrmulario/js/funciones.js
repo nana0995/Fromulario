@@ -25,7 +25,7 @@ function agregarElementos(){
 		|| validarVacio("nombre")=false || validarVacio("telefono")==false
 		|| validarVacio("nombre")==false || validarVacio("telefono")==false
 		|| validarVacio("direccion")==false || validarVacio("observaciones")==false
-		|| validarVacio("email")==false || validarVacio("edad")==false){
+		|| validarVacio("email")==0  || validarVacio("edad")==false){
 		alert("Todos los campos son requeridos");
 	}else if(validarEmail(document.getElementById("email").value)==false){
 		alert("Email incorrecto");
