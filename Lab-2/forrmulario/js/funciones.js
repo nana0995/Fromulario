@@ -7,7 +7,7 @@ function agregarElementos(){
 
 	if(document.getElementById("genero1").checked){
 		genero = document.getElementById("genero1").title;
-		genero = null;
+	
 	}else{
 		genero = document.getElementById("genero2").title;
 	}
@@ -102,7 +102,7 @@ function validarEmail(email) { //Validamos para que solo se permita formato emai
 	var domain = email.substring(at + 1);
 	
 	// Consultar longitudes
-	if (local.length < 1 & local.length > 64 || domain.length < 4 || domain.length > 255)
+	if (local.length < 1 && local.length > 64 || domain.length < 4 || domain.length > 255)
 		return false;
 	
 	// Asegúrese de que el dominio local y el dominio no comience con un punto ni termine con un punto
