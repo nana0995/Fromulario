@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORMULAIO</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Uso de Javascript">
+	<meta name="keywords" content="HTML5, CSS3, Javascript">
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<script src="js/funciones.js"></script>
+</head>
+<body>
+
+	<header>
+		<nav>
+			
+		</nav> <!--barra superior de menú-->
+	</header>
+
+	<section>
+		<div id="cajaform"> <!--caja principal-->
+			<form id="formulario" name="frm_datos">
+				<label for="txt_cedula">Cedula</label>
+				<input class="cajatexto" id="cedula" name="txt_cedula" type="text" value="" title="ID" placeholder="Cedula" onkeypress="if(validarMaxLength(this,9,event)==false || validarOnlyNum(event)==false) {return false;};">
+				<br> 
+				<label for="txt_nombre">Nombre</label>
+				<input class="cajatexto" id="nombre" name="txt_nombre" type="text" value="" title="Nombre" placeholder="Nombre">
+				<br> 
+				<label for="txt_telefono">Telefono</label>
+				<input class="cajatexto" id="telefono" name="txt_telefono" type="text" value="" title="Telefono" placeholder="Telefono" onkeypress="if(validarMaxLength(this,8,event)==false || validarOnlyNum(event)==false) {return false;};">
+				<br> 
+				<label for="txt_direccion">Direccion</label>
+				<input class="cajatexto" id="direccion" name="txt_direccion" type="text" value="" title="Direccion" placeholder="Direccion">
+				<br> 
+				<label for="txt_email">E-mail</label>
+				<input class="cajatexto" id="email" name="txt_email" type="text" value="" title="E-mail" placeholder="E-mail">
+				<br> 
+				<label for="cmb_estadocivil">Estado Civil</label>
+				<select id="estadocivil" name="cmb_estadocivil">
+					<option value="Soltero">Soltero</option>
+					<option value="Casado">Casado</option>
+					<option value="Viudo">Viudo</option>
+					<option value="Divorciado">Divorciado</option>
+				</select>
+				<br>
+				<label for="txt_edad">Edad</label>
+				<input class="cajatexto" id="edad" name="txt_edad" type="number" value="" title="Edad" placeholder="Edad" onkeypress="if(validarMaxLength(this,3,event)==false || validarOnlyNum(event)==false || validarEdad(event)==false) {return false;}">
+				<br> 
+				<label>Genero:</label> &nbsp;&nbsp;&nbsp;
+				<label>Masculino
+					<input class="radio" id="genero1" name="rdb_genero" type="radio" value="M" title="Masculino" checked="checked">
+				</label>
+				<label>Femenino
+					<input class="radio" id="genero2" name="rdb_genero" type="radio" value="F" title="Femenino">
+				</label>
+				<br>
+				<label>Condicion Actual:</label> &nbsp;&nbsp;&nbsp;
+				<label>Trabaja
+					<input class="check" id="condicion1" name="chk_condicion" type="checkbox" value="Trabaja" title="Trabaja">
+				</label>
+				<label>Estudia
+					<input class="check" id="condicion2" name="chk_condicion" type="checkbox" value="Estudia" title="Estudia">
+				</label>
+				<br>
+				<label for="txt_observaciones">Observaciones</label><br>
+				<textarea class="areatexto" id="observaciones" name="txt_observaciones" cols="30" rows="5" title="Observaciones" onkeypress="return validarMaxLength(this,64,event)"></textarea>
+				<br><br>
+				<input class="boton" id="guardar" name="btn_guardar" type="button" title="Guardar" value="Guardar" onclick="agregarElementos()">
+
+				
+			</form>
+		</div>
+
+		<div id="cajadatos">
+			<table class="tabla" id="tabladatos">
+				<thead>
+					<td>Cedula</td><td>Nombre</td><td>Telefono</td><td>Direcciones</td><td>Email</td><td>Estado Civil</td><td>Edad</td><td>Genero</td><td>Condicion Actual</td><td>Observaciones</td>
+				</thead>
+				<tbody id="cuerpotabla">
+					<tr id="fila1">
+						<td>220020202</td><td>Juan</td><td>27786654</td><td>San Jose</td><td>juan@servidor.com</td><td>Soltero(a)</td><td>32</td><td>Masculino</td><td>Trabaja</td><td>Estudiante de la UNA</td>
+					</tr>
+					<tr id="fila2">
+						<td>666000676</td><td>Maria</td><td>89909976</td><td>Puntarenas</td><td>maria@gmail.com</td><td>Divirciado(a)</td><td>19</td><td>Fenemino</td><td>Estudia</td><td>Trabaja en la UCR</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+
+	</section>
+
+	<footer> <!--barra inferior -->
+		
+	</footer>
+
+</body>
+</html>

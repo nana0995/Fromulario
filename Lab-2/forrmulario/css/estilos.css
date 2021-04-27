@@ -1,0 +1,81 @@
+html, body
+{
+	margin: 0px;
+	padding: 0px; /* Márgenes reducidos a 0*/
+	overflow: hidden; /* Ocultar el scroll de la página*/
+	font-family: Segoe UI, Century Gothic, Verdana, Arial;
+	background: #F9F9F9;
+}
+
+#cajaform {
+	position: relative;
+	border: 1px solid #CCC;
+	padding: 20px;
+	margin: 10px;
+	float: left;
+	width: 310px;
+	height: 380px;
+}
+
+.cajatexto, .areatexto, select, textarea {
+	position: absolute;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	left: 120px;
+	margin: 3px;
+	width: 200px;
+}
+
+.boton {
+	position: absolute;
+	border: 1px solid #CCC;
+	bottom: 10px;
+	height: 40px;
+	border-radius: 3px;
+	right: 35px;
+}
+
+.boton:hover {
+	background: #007ACF;
+}
+
+#cajadatos {
+	position: relative;
+	border: 1px solid #CCC;
+	padding: 20px;
+	margin: 10px;
+	width: 780px;
+	height: 380px;
+	overflow: auto;
+	top: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+thead {
+	font-weight: bold;
+	background: #DBEAF9;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+td {
+	border: 1px solid #CCC;
+	padding: 5px;
+}
+
+table tr:nth-child(even){
+	background-color: #808080;
+}
+
+table tr:nth-child(odd){
+	background-color: #C0C0C0;
+}
+
+table tr:hover {
+  background-color: #34495E;
+  cursor: pointer;
+}
