@@ -5,7 +5,7 @@ function agregarElementos(){
 	var genero = null;
 	var condicionActual; /* condicion actual*/
 
-	if(document.getElementById("genero1")checked){
+	if(document.getElementById("genero1").checked){
 		genero = document.getElementById("genero1").title;
 	}else{
 		genero  document.getElementById("genero2").title;
