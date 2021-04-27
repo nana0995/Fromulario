@@ -71,7 +71,7 @@ function validarOnlyLet(e) { //Validamos para que solo se permita letras
 	|| (tecla==233)
 	|| (tecla==237)
 	|| (tecla==243)
-	|| (tecla==250))
+	|| (tecla==300))
 		return true;
 	patron =/[A-Za-z\s]/;
 	te = String.fromCharCode(tecla);
