@@ -7,6 +7,7 @@ function agregarElementos(){
 
 	if(document.getElementById("genero1").checked){
 		genero = document.getElementById("genero1").title;
+		genero = null;
 	}else{
 		genero  document.getElementById("genero2").title;
 	}
@@ -15,7 +16,7 @@ function agregarElementos(){
 	if (document.getElementById("condicion1").checked){
 		condicionActual = document.getElementById("condicion1").title;
 	} else if(document.getElementById("condicion2").checked){
-		condicionActual = domecnt.getElementById("condicion2").title;
+		condicionActual = document.getElementById("condicion2").title;
 	} else{
 		condicionActual = "ninguno";
 	}
