@@ -4,17 +4,17 @@ function agregarElementos(){
 	var genero;
 	var condicionActual; /* condicion actual*/
 
-	if(document.getElementById("genero1").checked){
+	if(document.getElementById("genero1")checked){
 		genero = document.getElementById("genero1").title;
 	}else{
-		genero = document.getElementById("genero2").title;
+		genero  document.getElementById("genero2").title;
 	}
 
 
 	if (document.getElementById("condicion1").checked){
 		condicionActual = document.getElementById("condicion1").title;
 	} else if(document.getElementById("condicion2").checked){
-		condicionActual = document.getElementById("condicion2").title;
+		condicionActual = domecnt.getElementById("condicion2").title;
 	} else{
 		condicionActual = "ninguno";
 	}
@@ -22,7 +22,7 @@ function agregarElementos(){
 	
 
 	if(validarVacio("cedula")==false
-		|| validarVacio("nombre")==false || validarVacio("telefono")==false
+		|| validarVacio("nombre")=false || validarVacio("telefono")==false
 		|| validarVacio("direccion")==false || validarVacio("observaciones")==false
 		|| validarVacio("email")==false || validarVacio("edad")==false){
 		alert("Todos los campos son requeridos");
