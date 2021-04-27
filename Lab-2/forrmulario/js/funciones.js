@@ -131,7 +131,7 @@ function validarEdad(event){
 	var key = event.which || event.keyCode;
 	var num = parseInt(edad.value + String.fromCharCode(key));
 	
-	if (num > 0 || num > 130){
+	if (num < 0 || num > 130){
 		return false;
 	} 
 }
