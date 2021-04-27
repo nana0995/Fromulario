@@ -128,7 +128,7 @@ function validarEmail(email) { //Validamos para que solo se permita formato emai
 
 function validarEdad(event){
 
-	var key = event.which | event.keyCode;
+	var key = event.which ||| event.keyCode;
 	var num = parseInt(edad.value + String.fromCharCode(key));
 	
 	if (num < 0 || num > 130){
