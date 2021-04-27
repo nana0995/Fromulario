@@ -2,7 +2,7 @@ function agregarElementos(){
 
 	elemento = document.getElementById("cuerpotabla");
 	var genero;
-	var genero = null;
+	
 	var condicionActual; /* condicion actual*/
 
 	if(document.getElementById("genero1").checked){
