@@ -9,7 +9,7 @@ function agregarElementos(){
 		genero = document.getElementById("genero1").title;
 		genero = null;
 	}else{
-		genero  document.getElementById("genero2").title;
+		genero = document.getElementById("genero2").title;
 	}
 
 
