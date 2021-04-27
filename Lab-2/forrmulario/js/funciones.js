@@ -23,6 +23,7 @@ function agregarElementos(){
 
 	if(validarVacio("cedula")==false
 		|| validarVacio("nombre")=false || validarVacio("telefono")==false
+		|| validarVacio("nombre")==false || validarVacio("telefono")==false
 		|| validarVacio("direccion")==false || validarVacio("observaciones")==false
 		|| validarVacio("email")==false || validarVacio("edad")==false){
 		alert("Todos los campos son requeridos");
